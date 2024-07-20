@@ -107,6 +107,8 @@ def main():
                 counter = 0
     except KeyboardInterrupt:
         pass
+    finally:
+        summary(info_list, codes_counter, size_counter)
 
 
 if __name__ == "__main__":
