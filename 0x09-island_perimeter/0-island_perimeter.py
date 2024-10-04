@@ -43,7 +43,7 @@ def cell_perimeter(row, column, grid):
     perimeter = 4
     if is_land(row - 1, column, grid):
         perimeter -= 1
-    if is_land(row+1, column, grid):
+    if is_land(row + 1, column, grid):
         perimeter -= 1
     if is_land(row, column - 1, grid):
         perimeter -= 1
@@ -57,7 +57,7 @@ def island_perimeter(grid):
     Calculate the total perimeter of the islands in a grid.
 
     Args:
-        grid: 2D list representing the map (1 for land, 0 for water).
+        grid: 2D list representing the map (1 for land, 0 for water)..
 
     Returns:
         int: Total perimeter of the island(s).
